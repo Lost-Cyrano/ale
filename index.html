@@ -27,9 +27,16 @@
     </section>
 
     <section id="products">
-      <h2>Our Products</h2>
-      <div id="product-list"></div>
-    </section>
+  <h2>Our Products</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper" id="product-carousel">
+      <!-- Products will be dynamically loaded here -->
+    </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
 
     <section id="about">
       <h2>About Us</h2>
@@ -43,22 +50,6 @@
         <li>Market 1: Every Monday</li>
         <li>Market 2: First Saturday of each month</li>
       </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Send</button>
-      </form>
     </section>
   </main>
 
