@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const scheduleTable = document.getElementById("market-schedule");
+
+  // Mock data for markets
+  const markets = [
+    { date: "2024-01-15", location: "Main Street Market", notes: "10 AM - 4 PM" },
+    { date: "2024-01-22", location: "Town Square", notes: "9 AM - 5 PM" },
+  ];
+
+  markets.forEach(market => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${market.date}</td>
+      <td>${market.location}</td>
+      <td>${market.notes}</td>
+    `;
+    scheduleTable.appendChild(row);
+    
   const productCarousel = document.getElementById("product-carousel");
 
   fetch("assets/info.json")
